@@ -1,0 +1,134 @@
+body,html{
+    width:auto;
+    font-size: 10px;
+    height:100vh;
+   
+}
+
+.wrapper{
+    margin-inline:auto;
+    margin-block:1rem;
+    max-width:70rem;
+    max-height:1000vh;
+    
+    border-radius: 0.5rem;
+    display: flex;
+    padding:10px;
+    align-items: center;
+    justify-content: center;
+    gap:5px;
+    background-color:black;
+    color:white;
+    flex-direction:column;
+    box-shadow: 0px 0px 5px grey;
+}
+.upper-section{
+    display: flex;
+    width:100%;
+    justify-content: center;
+    gap:5px;
+
+}
+
+.upper-section .inputfield{
+    margin-inline:0.4rem;
+    outline:none;
+    background-color: transparent;
+    font-size: 1.4rem;
+    color:white;
+    border:none;
+    padding: 0;
+    border-bottom:1px solid white;
+    opacity:0.7;
+}
+.upper-section .inputfield:focus{
+   opacity: 1;
+  
+}
+.upper-section button{
+    padding-inline:3rem;
+    padding-block:0.4rem;
+    cursor:pointer;
+    background-color:white;
+    color:black;
+    border:none;
+    transition: all 0.3s ease-in-out;
+ 
+}
+.upper-section button:hover{
+    background-color:black;
+    color:white;
+}
+.lower-section{
+    margin-top:2rem;
+    display: flex;
+    margin-inline:auto;
+    max-width:80vw;
+    max-height:80vh;
+    overflow:auto;
+    flex-wrap: wrap;
+    gap:1rem;
+    align-items:flex-start;
+    flex-direction: column;
+    
+}
+.box{
+    display: flex;
+    flex-direction: row;
+ 
+    cursor:default;
+    gap:2rem;
+    max-width:50rem;
+    flex-grow: 0;
+    flex-shrink:1;
+    padding-inline:2rem;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow:0px 0px 5px grey;
+    font-size:1.4rem;
+    letter-spacing: 1px;
+    font-weight: lighter;
+}
+.controls{
+    flex:1;
+}
+.controls{
+    flex:1;
+    display: flex;
+    justify-content: flex-start;
+    padding:1rem;
+    align-items: center;
+    gap:0.5rem;
+
+}
+.controls button{
+    cursor:pointer;
+    background-color: white;
+    border:none;
+    font-size:1.3rem;
+    color:black;
+    padding:0.3rem;
+    border-radius:50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    outline:none;
+    transition:all 0.3s ease-in-out;
+}
+.controls button:hover{
+    background-color: transparent;
+}
+
+@media (max-width:700px){
+
+    .wrapper{
+        border-radius: 0px;
+        max-width:90%;
+        height:100vh;
+    }
+    .upper
+    .box{
+        max-width:20rem;
+        gap:3rem;
+    }
+}
